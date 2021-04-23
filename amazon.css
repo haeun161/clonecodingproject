@@ -50,6 +50,7 @@ body{
     background-color: rgb(39, 39, 95);
     height: 40px;
     width: 100%;
+    top: 60px;
     margin-left: 0px;
     align-items: center; /* 모든 아이템 정중앙에 배치 */
     position: fixed;
