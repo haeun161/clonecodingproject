@@ -30,37 +30,35 @@ body{
     font-size: 14px;
     width: 100%;
     height: 60px;
-    top: 0px;
     position: fixed;
 }
 /* Bar1-left */
 .bar1-left{
-    display: flex;
+    color: #F6F5F0;
 }
 /* Bar1-middle */
 .bar1-middle{
+    color: #F6F5F0;
     display: flex;
 }
 /* Bar1-right */
 .bar1-right{
+    color: #F6F5F0;
     display: flex;
 }
     /* Bar2 */
 #bar2{
     background-color: rgb(39, 39, 95);
+    color: #F6F5F0;
     height: 40px;
     width: 100%;
+    font-size: 20px;
     top: 60px;
-    margin-left: 0px;
     align-items: center; /* 모든 아이템 정중앙에 배치 */
     position: fixed;
 }
 
 /* Bar2-left */
-.bar2-left{
-    align-items: center; /* 모든 아이템 정중앙에 배치 */
-    display: flex;
-}
 
 .bar2-left>.material-icons#btn--open {
     display: block;
@@ -70,20 +68,52 @@ body{
     display: none;}
 
 nav {
-    position: absolute;
+    background: #000;
+    color: #F6F5F0;
+    font-size: 20px;
     top: 40px;
     height: calc(100vh - 60px);
     width: 300px;
-    background: #000;
+    position: absolute;
     transform: translateX(-100%);
     transition: .4s;
 }
 /* Bar2-middle */
 .bar2-middle{
     color: #F6F5F0;
-    display: flex;
+    display: fixed;
+    margin-left: 100px;
+    align-items: center; /* 모든 아이템 정중앙에 배치 */
+    position: fixed;
 }
 /* Bar2-right */
 .bar2-right{
+    color: #F6F5F0;
     display: flex;
+    margin-left: 500px;
 }
+
+    /* FOOTER */
+#footer1{
+    color: #F6F5F0;
+    background-color: rgb(39, 39, 95);
+    height: 60px;
+    font-size: 14px;
+    width: 100%;
+    height: 100px;
+    bottom: 20px;
+    padding: 10px 0 30px;
+    position: fixed;
+}
+#footer2{
+    color: #F6F5F0;
+    background-color: black;
+    height: 60px;
+    font-size: 14px;
+    width: 100%;
+    height: 20px;
+    bottom: 0px;
+    padding: 10px 0 30px;
+    position: fixed;
+}
+
