@@ -1,0 +1,63 @@
+/* COMMON */
+
+body{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    background: #F6F5F0;}
+
+.material-icons{
+        color: #F6F5F0;
+        font-size: 20px;
+        font-weight: 700;
+        padding-top: 7px;
+        padding-left: 10px;
+        white-space: nowrap;
+        cursor: pointer;
+        }
+
+/* HEADER */
+#main-bar{
+    align-items: center;
+}
+
+    /* Bar1 */
+#bar1{
+    background-color: black;
+    height: 60px;
+    font-size: 14px;
+    width: 100%;
+    height: 60px;
+    top: 0px;
+}
+.bar1-left{
+    display: flex;
+}
+.bar1-middle{
+    color: #F6F5F0;
+    display: flex;
+}
+.bar1-right{
+    display: flex;
+}
+    /* Bar2 */
+#bar2{
+    background-color: rgb(39, 39, 95);
+    height: 40px;
+    width: 100%;
+    margin-left: 0px;
+    align-items: center; /* 모든 아이템 정중앙에 배치 */
+    position: fixed;
+}
+
+.bar2-left{
+    display: flex;
+}
+.bar2-middle{
+    color: #F6F5F0;
+    display: flex;
+}
+.bar2-right{
+    display: flex;
+}
