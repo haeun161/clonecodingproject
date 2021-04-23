@@ -52,6 +52,7 @@ body{
 }
 
 .bar2-left{
+    align-items: center; /* 모든 아이템 정중앙에 배치 */
     display: flex;
 }
 .bar2-middle{
