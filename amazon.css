@@ -15,6 +15,7 @@ body{
         padding-left: 10px;
         white-space: nowrap;
         cursor: pointer;
+        position: absolute;
         }
 
 /* HEADER */
@@ -31,13 +32,16 @@ body{
     height: 60px;
     top: 0px;
 }
+/* Bar1-left */
 .bar1-left{
     display: flex;
 }
+/* Bar1-middle */
 .bar1-middle{
     color: #F6F5F0;
     display: flex;
 }
+/* Bar1-right */
 .bar1-right{
     display: flex;
 }
@@ -51,14 +55,32 @@ body{
     position: fixed;
 }
 
+/* Bar2-left */
 .bar2-left{
     align-items: center; /* 모든 아이템 정중앙에 배치 */
     display: flex;
 }
+.bar2-left>.material-icons#btn--open {
+    display: block;
+}
+
+.bar2-left>.material-icons#btn--close {
+    display: none;}
+nav {
+    position: absolute;
+    top: 40px;
+    height: calc(100vh - 60px);
+    width: 300px;
+    background: #000;
+    transform: translateX(-100%);
+    transition: .4s;
+}
+/* Bar2-middle */
 .bar2-middle{
     color: #F6F5F0;
     display: flex;
 }
+/* Bar2-right */
 .bar2-right{
     display: flex;
 }
