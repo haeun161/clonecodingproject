@@ -18,7 +18,7 @@ body{
         position: absolute;
         }
 
-/* HEADER */
+    /* HEADER */
 #main-bar{
     align-items: center;
 }
@@ -31,6 +31,7 @@ body{
     width: 100%;
     height: 60px;
     top: 0px;
+    position: fixed;
 }
 /* Bar1-left */
 .bar1-left{
@@ -38,7 +39,6 @@ body{
 }
 /* Bar1-middle */
 .bar1-middle{
-    color: #F6F5F0;
     display: flex;
 }
 /* Bar1-right */
@@ -60,12 +60,14 @@ body{
     align-items: center; /* 모든 아이템 정중앙에 배치 */
     display: flex;
 }
+
 .bar2-left>.material-icons#btn--open {
     display: block;
 }
 
 .bar2-left>.material-icons#btn--close {
     display: none;}
+
 nav {
     position: absolute;
     top: 40px;
