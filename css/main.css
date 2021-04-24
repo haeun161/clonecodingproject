@@ -33,10 +33,8 @@ body{
     align-items: center; /* 모든 아이템 정중앙에 배치 */
     position: fixed;
 }
+
 /* Bar1-left */
-#bar1-left{
-    color: #F6F5F0;
-}
 
     /* Bar1-middle */
 #bar1-middle{
@@ -53,6 +51,8 @@ body{
     align-items: center; 
     position: fixed;
 }
+#bar1-right{
+}
 
 /* SEARCH */
 .search{
@@ -60,7 +60,7 @@ body{
     font-size: 20px;
     font-weight: 700;
     top: 12px;
-    left: 180px;
+    left: 168px;
     white-space: nowrap;
     cursor: pointer;
     align-items: center; 
@@ -68,7 +68,7 @@ body{
 }
 .search > .search__box{
     height: 25px;
-    width: 400px;s
+    width: 410px;
 
 }
 .search > .material-icons{
@@ -82,13 +82,17 @@ body{
     border: 0.1rem outset rgb(0, 0, 0);
     align-items: center; 
     position: fixed;
-    
+
 }
 
 /* Bar1-right */
 #bar1-right{
+    background-color: #F6F5F0;
     color: #F6F5F0;
-    display: flex;
+    font-size: 20px;
+    left: 0px;
+    margin-left: 800px;
+    display: fixed;
 }
 
     /* Bar2 */
@@ -137,18 +141,39 @@ nav {
 #bar2-middle{
     color: #F6F5F0;
     display: fixed;
-    margin-left: 100px;
+    margin-top: 5px;
+    margin-left: 200px;
     align-items: center;
     position: fixed;
 }
+#side__menu>.item>.item__name>.material-icons{
+    color: #F6F5F0;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-left: 200px;
+    cursor: pointer;
+    position: fixed;
+    }   
+
 /* Bar2-right */
 #bar2-right{
     color: #F6F5F0;
-    display: flex;
-    margin-left: 500px;
+    margin-top: 5px;
+    margin-left: 800px;
+    display: fixed;
 }
-    /* MAIN SECTION */
 
+
+    /* MAIN SECTION */
+main>.content{
+    color:#000;
+    margin-top: 400px;
+    top: 200px;
+    height: 40px;
+    width: 100%;
+    display: fixed;
+}
 
     /* FOOTER */
 #footer1{
@@ -166,7 +191,7 @@ nav {
     color: #F6F5F0;
     background-color: black;
     height: 60px;
-    font-size: 14px;
+    font-size: 20px;
     width: 100%;
     height: 20px;
     bottom: 0px;

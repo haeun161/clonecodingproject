@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <title>Amazon</title>
     <!-- 파비콘 설정 -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <!-- 각 브라우저의 기본 스타일을 초기화 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <!--구글 폰트-->
@@ -17,13 +17,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Asearch">
     <!--CSS와 js와 연결-->
-    <link rel="stylesheet" href="./amazon.css">
-    <script defer src="./amazon.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/main.js"></script>
 </head>
 <body>
         <!-- HEADER -->
         <header id="main-bar">
+
+            <!-- bar1 -->
             <div id="bar1">
+                <!-- bar1 left -->
                 <div id="bar1-left">
                     
                     <!-- 로고 이미지 -->
@@ -32,10 +35,11 @@
                         <a href="./amazon.html" class="logo">
                             <img src="./images/logo.jpeg" alt="로고">
                         </a>
-
                     </div>
                     
                 </div>
+
+                <!-- bar1 middle -->
                 <div id="bar1-middle">
                     <!-- 검색 창 -->
                     <div class="search">
@@ -48,11 +52,23 @@
                     </div>
                 </div>
                 
-                <div id="bar1-right"></div>
+                <!-- bar1 right -->
+                <div id="bar1-right">
+                    <!-- 배송지 입력 -->
+                    <div class="delivery">
+                        <a href="./html/delivery.html">배송지 입력</a>
+                    </div>
+                    <!-- 로그인 -->
+                    <div class="login">
+                        <a href="./html/login.html">로그인 하기</a>
+                    </div>
+                </div>
             </div>
-            
+
+            <!-- bar2 -->
             <div id="bar2">
 
+                <!-- bar2 left -->
                 <div id="bar2-left">
                     
                     <div id="btn--open" class="material-icons">
@@ -66,12 +82,16 @@
                     
                     <!-- 사이드 메뉴 -->
                     <nav id="side__menu">
+                        <!-- 사이드 메뉴1 -->
                         <li class="item">
                             <div class="item__title">
-                                <div class="item__name">디지털 콘텐츠 및 기기</div>
-                                <span class="material-icons-outlined">
-                                    keyboard_arrow_right
-                                </span>
+                                <div class="item__name">
+                                    디지털 콘텐츠 및 기기
+                                    <span class="material-icons">
+                                        keyboard_arrow_right
+                                    </span>
+                                </div>
+                                
                             </div>
                             <div class="item__contents">
                                 <ul>
@@ -80,12 +100,17 @@
                                 </ul>
                             </div>
                         </li>
+
+                        <!-- 사이드 메뉴2 -->
                         <li class="item">
                             <div class="item__title">
-                                <div class="item__name">부서별 쇼핑</div>
-                                <span class="material-icons-outlined">
-                                    keyboard_arrow_right
-                                </span>
+                                <div class="item__name">
+                                    부서별 쇼핑
+                                    <span class="material-icons">
+                                        keyboard_arrow_right
+                                    </span>
+                                </div>
+                                
                             </div>
                             <div class="item__contents">
                                 <ul>
@@ -95,12 +120,17 @@
                                 </ul>
                             </div>
                         </li>
+
+                        <!-- 사이드 메뉴3 -->
                         <li class="item">
                             <div class="item__title">
-                                <div class="item__name">프로그램 및 기능</div>
-                                <span class="material-icons-outlined">
-                                    keyboard_arrow_right
-                                </span>
+                                <div class="item__name">
+                                    프로그램 및 기능
+                                    <span class="material-icons">
+                                        keyboard_arrow_right
+                                    </span>
+                                </div>
+                
                             </div>
                             <div class="item__contents">
                                 <ul>
@@ -111,12 +141,16 @@
                                 </ul>
                             </div>
                         </li>
+                        <!-- 사이드 메뉴4 -->
                         <li class="item">
                             <div class="item__title">
-                                <div class="item__name">도움말 및 설정</div>
-                                <span class="material-icons-outlined">
-                                    keyboard_arrow_right
-                                </span>
+                                <div class="item__name">
+                                    도움말 및 설정
+                                    <span class="material-icons">
+                                        keyboard_arrow_right
+                                    </span>
+                                </div>
+                                
                             </div>
                             <div class="item__contents">
                                 <ul>
@@ -130,6 +164,7 @@
 
                     </nav>
 
+                <!-- bar2 middle -->
                 <div id="bar2-middle">
                     <div id="divide_bar2">
                         <a href="https://www.amazon.com/-/ko/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058">
@@ -144,6 +179,8 @@
                             레지스트리</a>
                     </div>
                 </div>
+
+                <!-- bar2 right -->
                 <div id="bar2-right">
                     <a href="https://www.amazon.com/-/ko/gp/customer-preferences/select-currency/?ie=UTF8&ref_=nav_swm_undefined&pf_rd_p=bc0f93df-39b0-41b8-a23f-3b2727aaad75&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=YQNM2F712AZ9R6B4AVZ3">
                         click here to change language </a>
@@ -152,6 +189,8 @@
         </header>
         
         <!-- MAIN SECTION -->
+        <main id="content">
+        </main>
 
         
         <!-- FOOTER -->
