@@ -26,13 +26,13 @@
 
             <!-- bar1 -->
             <div id="bar1">
+
                 <!-- bar1 left -->
-                <div id="bar1-left">
-                    
+                <div id="bar1-left">                    
                     <!-- 로고 이미지 -->
-                    <!-- 클릭하면 홈으로 이동하는 링크가 걸려있습니다 -->
                     <div class="logo">
-                        <a href="./main.html" class="logo">
+                        <!-- 클릭하면 홈으로 이동하는 링크가 걸려있습니다 -->
+                        <a href="./index.html" class="logo">
                             <p onclick="popAlert()">
                                 <img src="./images/logo.jpeg" alt="로고"> 
                             </p>
@@ -56,13 +56,29 @@
                 
                 <!-- bar1 right -->
                 <div id="bar1-right">
+
                     <!-- 배송지 입력 -->
                     <div class="delivery">
-                        <a href="./html/delivery.html">배송지 입력</a>
+                        <a href="./html/delivery.html">
+                            <span class="material-icons">
+                                shopping_cart
+                                </span>
+                            배송지 입력
+                        </a>
                     </div>
+                    
                     <!-- 로그인 -->
                     <div class="login">
-                        <a href="./html/login.html">로그인 하기</a>
+                        <a href="./html/login.html">
+                            로그인하기
+                        </a>             
+                    </div>
+
+                    <!-- 회원가입하기 -->
+                    <div class="signin">
+                        <a href="./html/signin.html">
+                            회원가입하기
+                        </a>
                     </div>
                 </div>
             </div>
@@ -86,9 +102,9 @@
                     <nav id="side__menu">
                         <!-- 사이드 메뉴1 -->
                         <li class="item">
-                            <div class="item__title">
-                                <div class="item__name">
-                                    디지털 콘텐츠 및 기기
+                            <div class="item__title">                          
+                                <div class="item__name">     
+                                    디지털 콘텐츠 및 기기                                
                                     <span class="material-icons">
                                         keyboard_arrow_right
                                     </span>
@@ -126,8 +142,8 @@
                         <!-- 사이드 메뉴3 -->
                         <li class="item">
                             <div class="item__title">
-                                <div class="item__name">
-                                    프로그램 및 기능
+                                <div class="item__name">  
+                                    프로그램 및 기능                                  
                                     <span class="material-icons">
                                         keyboard_arrow_right
                                     </span>
@@ -143,11 +159,12 @@
                                 </ul>
                             </div>
                         </li>
+                        
                         <!-- 사이드 메뉴4 -->
                         <li class="item">
-                            <div class="item__title">
-                                <div class="item__name">
-                                    도움말 및 설정
+                            <div class="item__title">                                
+                                <div class="item__name"> 
+                                    도움말 및 설정                                   
                                     <span class="material-icons">
                                         keyboard_arrow_right
                                     </span>
@@ -168,18 +185,22 @@
 
                 <!-- bar2 middle -->
                 <div id="bar2-middle">
-                    <div id="divide_bar2">
                         <a href="https://www.amazon.com/-/ko/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058">
-                            오늘의 딜</a>
+                            오늘의 딜
+                        </a>
                         <a href="https://www.amazon.com/-/ko/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice_2bf4fe8c5ec54e6bae2d1c24043f012b">
-                            고객서비스</a>
+                            고객서비스
+                        </a>
                         <a href="https://www.amazon.com/-/ko/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc_4fb606b1a14b44e4823e00c03fc71f47">
-                            기프트 카드</a>
+                            기프트 카드
+                        </a>                    
                         <a href="https://www.amazon.com/-/ko/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01">
-                            판매</a>
+                            판매
+                        </a>
                         <a href="https://www.amazon.com/registries?_encoding=UTF8&language=ko&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5">
-                            레지스트리</a>
-                    </div>
+                            레지스트리
+                        </a>
+                                    
                 </div>
 
                 <!-- bar2 right -->
@@ -191,8 +212,19 @@
         </header>
         
         <!-- MAIN SECTION -->
-        <main id="content">
-        </main>
+        <section class="wrapper">
+            <aside id="left"></aside>
+            <main>
+              <div id="large"></div>
+              <div class="grid-container">
+                <div class="item1">1</div>
+                <div class="item2">2</div>
+                <div class="item3">3</div>  
+                <div class="item4">4</div>
+               </div>
+            </main>
+            <aside id="right"></aside>
+          </section>
 
         
         <!-- FOOTER -->
@@ -211,7 +243,7 @@
             </div>
             <div id="footer2">
                 <a href="https://www.amazon.com/-/ko/gp/help/customer/display.html?nodeId=508088&ref_=footer_cou">
-                이용약관
+                    이용약관
                 </a>
                 <a href="https://www.amazon.com/-/ko/gp/help/customer/display.html?nodeId=468496&ref_=footer_privacy">
                     개인정보 취급 고지
