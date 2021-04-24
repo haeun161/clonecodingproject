@@ -229,10 +229,63 @@ nav {
 
     /* MAIN SECTION */
 main {
-  width: 560px;
+  width: 1000px;
   height: 800px;
   float: right;
   background: rgb(255, 255, 255);
+}
+.item1{
+    background-color: lightslategray;
+    top: 120px;
+    left: 550px;
+    width: 150px;
+    height: 50px;
+    position: fixed;
+    display: fixed;
+}
+.item2{
+    background-color: lightblue;
+    top: 120px;
+    left: 800px;
+    width: 250px;
+    height: 200px;
+    position: fixed;
+    display: fixed;
+}
+.image{
+    width: 250px;
+    height: 200px;
+}
+
+.item3{
+    background-color: lightblue;
+    top: 120px;
+    left: 1200px;
+    width: 250px;
+    height: 200px;
+    float: left;
+    position: fixed;
+    display: fixed;
+}
+.item4{
+    background-color: lightblue;
+    top: 350px;
+    left: 800px;
+    width: 250px;
+    height: 200px;
+    float: left;
+    position: fixed;
+    display: fixed;
+}
+.item5{
+    background-color: lightblue;
+    top: 350px;
+    left: 1200px;
+    width: 250px;
+    height: 200px;
+    float: left;
+    position: fixed;
+    display: fixed;
 }
 
     /* FOOTER */
