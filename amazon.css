@@ -30,6 +30,7 @@ body{
     font-size: 14px;
     width: 100%;
     height: 60px;
+    align-items: center; /* 모든 아이템 정중앙에 배치 */
     position: fixed;
 }
 /* Bar1-left */
@@ -40,7 +41,20 @@ body{
 .bar1-middle{
     color: #F6F5F0;
     display: flex;
+    align-items: center; 
+    position: fixed;
 }
+.search{
+    color: #F6F5F0;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 200px;
+    white-space: nowrap;
+    cursor: pointer;
+    align-items: center; 
+    position: fixed;
+}
+
 /* Bar1-right */
 .bar1-right{
     color: #F6F5F0;
@@ -54,7 +68,7 @@ body{
     width: 100%;
     font-size: 20px;
     top: 60px;
-    align-items: center; /* 모든 아이템 정중앙에 배치 */
+    align-items: center;
     position: fixed;
 }
 
@@ -66,11 +80,11 @@ body{
 
 .bar2-left>.material-icons#btn--close {
     display: none;}
-
+    /* nav */
 nav {
     background: #000;
     color: #F6F5F0;
-    font-size: 20px;
+    font-size: 15px;
     top: 40px;
     height: calc(100vh - 60px);
     width: 300px;
@@ -78,12 +92,22 @@ nav {
     transform: translateX(-100%);
     transition: .4s;
 }
+.material-icons-outlined{
+    color: #F6F5F0;
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 150px;
+    white-space: nowrap;
+    cursor: pointer;
+    position: absolute;
+}
+
 /* Bar2-middle */
 .bar2-middle{
     color: #F6F5F0;
     display: fixed;
     margin-left: 100px;
-    align-items: center; /* 모든 아이템 정중앙에 배치 */
+    align-items: center;
     position: fixed;
 }
 /* Bar2-right */
