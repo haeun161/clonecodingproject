@@ -286,7 +286,7 @@ main .wrapper #slider .slide__content {
 
 main .wrapper #slider .slide__content span {
     font-size: 80px;
-    color: #F6F5F0;
+    color: lightslategray;
 }
 
 /* SLIDER ARROW */
@@ -294,36 +294,35 @@ main .wrapper #slider .slide__content span {
 main .wrapper #slider .material-icons {
     justify-content: center;
     position: absolute;
-    top: 50%;
+    top: 400px;
     margin-top: -40px;
     font-size: 80px;
-    color: #F6F5F0;
+    color: lightslategray;
 }
 
 main .wrapper #slider .arrow {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 400px;
     margin-top: -50px;
     width: 0;
     height: 0;
 }
 
 main .wrapper #slider .arrow--left {
-    left: 0px;
+    left: 50px;
 }
 
 main .wrapper #slider .arrow--right {
-    right: 0px;
+    right: 50px;
 }
 
 /* SLIDER DOTS */
 
 main .wrapper #slider .dots {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 400px;
+    left: 50px;
     margin: 0 auto;
     padding: 10px;
     display: flex;
@@ -335,13 +334,13 @@ main .wrapper #slider .dots .dot {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #F6F5F0;
+    background: lightslategray;
     margin: 0 3px;
     cursor: pointer;
 }
 
 main .wrapper #slider .dots .dot1 {
-    background: #1107ff;
+    background: lightslategray;
 }
 
 /* 인기 쇼핑 카테고리 */
