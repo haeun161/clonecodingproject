@@ -27,6 +27,9 @@ body{
         }
 
     /* HEADER */
+header{
+    width: 100%;
+}
 #main-bar{
     align-items: center;
 }
