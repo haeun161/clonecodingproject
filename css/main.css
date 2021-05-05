@@ -1,3 +1,8 @@
+
+/* 데스크톱 */
+/* 스크린 너비가 1600px이하면 스타일 속성 적용됨 */
+@media screen and (max-width:1600px){
+
 /* 초기화 */
 * {
     margin: 0;
@@ -65,7 +70,7 @@ header{
     top: 0px;
     left: 150px;
     padding-left: 500px;
-    display: flex;
+    display: fixed;
     align-items: center; 
     position: fixed;
 }
@@ -110,7 +115,7 @@ header{
     width: 1000px;
     height: 60px;
     align-items: center; 
-    display: fixed;
+    display: flex
     position: fixed;
 }
 .delivery .material-icons{
@@ -430,6 +435,13 @@ main .wrapper #slider .dots .dot1 {
     padding: 10px 0 30px;
     align-content: center;
     position: fixed;
-    display: fixed;
+    display: fixed;}
 }
 
+/* 태블릿PC */
+/* 스크린 너비가 1400px이하면 스타일 속성 적용됨 */
+@media screen and (max-width:1400px){}
+
+/* 스마크폰 */
+/* 스크린 너비가 700px이하면 스타일 속성 적용됨 */
+@media screen and (max-width:700px){}
