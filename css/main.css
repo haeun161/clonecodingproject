@@ -1,7 +1,7 @@
 
 /* 데스크톱 */
 /* 스크린 너비가 1600px이하면 스타일 속성 적용됨 */
-@media screen and (min-width:1401px, max-width:1600px){
+@media screen and (max-width:1600px){
 
 /* 초기화 */
 * {
@@ -533,7 +533,7 @@ header{
 }
 }
 
-/* 스마크폰 */
+/* 스마트폰 */
 /* 스크린 너비가 700px이하면 스타일 속성 적용됨 */
 @media screen and (max-width:700px){
     /* 초기화 */
