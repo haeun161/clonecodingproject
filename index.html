@@ -33,9 +33,11 @@
                 <div id="bar1-left">                    
                     <!-- 로고 이미지 -->
                     <div class="logo">
-                        <!-- 클릭하면 홈으로 이동하는 링크가 걸려있습니다 -->
+                        <!-- 로고를 클릭하면 홈으로 이동하는 링크가 걸려있습니다 -->
                         <a href="./index.html" class="logo">
+                            <!-- 클릭하면 popAlert가 뜨도록 되어있습니다 -->
                             <p onclick="popAlert()">
+                                <!-- 로고 이미지 삽입, image파일에 존재하는 logo,jpeg와 연결-->
                                 <img src="./images/logo.jpeg" alt="로고"> 
                             </p>
                         </a>
@@ -71,6 +73,7 @@
                     
                     <!-- 로그인 -->
                     <div class="login">
+                        <!-- login.html파일과 연결되어 있다. -->
                         <a href="./html/login.html">
                             로그인하기
                         </a>             
@@ -78,6 +81,7 @@
 
                     <!-- 회원가입하기 -->
                     <div class="signin">
+                        <!-- signin.html파일과 연결되어 있다. -->
                         <a href="./html/signin.html">
                             회원가입하기
                         </a>
@@ -88,9 +92,9 @@
             <!-- bar2 -->
             <div id="bar2">
 
-                <!-- bar2 left -->
+                <!-- bar2 left(햄버거바) -->
                 <div id="bar2-left">
-                    
+                    <!-- 여는 아이콘 -->
                     <div id="btn--open" class="material-icons">
                         menu
                         모두
@@ -100,7 +104,7 @@
                         close
                     </div>
                     
-                    <!-- 사이드 메뉴 -->
+                    <!-- 사이드 메뉴(햄버거바 안의 내용) -->
                     <nav id="side__menu">
                         <!-- 사이드 메뉴1 -->
                         <li class="item">
@@ -187,6 +191,7 @@
 
                 <!-- bar2 middle -->
                 <div id="bar2-middle">
+                        <!-- bar2 middle는 모든 기존 amazon페이지와 연결-->
                         <a href="https://www.amazon.com/-/ko/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058">
                             오늘의 딜
                         </a>
@@ -207,6 +212,7 @@
 
                 <!-- bar2 right -->
                 <div id="bar2-right">
+                     <!-- bar2 right는 기존 amazon페이지와 연결 -->
                     <a href="https://www.amazon.com/-/ko/gp/customer-preferences/select-currency/?ie=UTF8&ref_=nav_swm_undefined&pf_rd_p=bc0f93df-39b0-41b8-a23f-3b2727aaad75&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=YQNM2F712AZ9R6B4AVZ3">
                         click here to change language </a>
                 </div>
@@ -214,7 +220,8 @@
         </header>
         
         <!-- MAIN SECTION -->
-        <!-- 콘텐츠 영역을 잡아주는 inner -->
+    <main>
+    <!-- 콘텐츠 영역을 잡아주는 inner -->
     <div class="inner">
         <!-- 수평 슬라이더 -->
         <div id="slider">
@@ -262,45 +269,55 @@
             <aside id="left"></aside>
             <main>
             <div id="large"></div>
-              <div class="grid-container">
-                <div class="item1"> 인기 쇼핑 카테고리 </div>
 
-                <div class="item2">
-                    <a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics-intl-ship&field-keywords=">
-                        1 전자제품
-                     </a>
-                    <img class="image" src="./images/인기상품/전자제품.jpeg" alt="전자제품">                
-                </div>
+    <!-- 콘텐츠 영역을 잡아주는 grid-container -->
+    <div class="grid-container">
 
-                <div class="item3">                
-                    <a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dbeauty-intl-ship&field-keywords=">
-                        2 미용제품
-                    </a>
-                    <img class="image" src="./images/인기상품/미용제품.jpeg" alt="미용제품">
-                </div>
+        <!--인기 쇼핑 카테고리 -->
+            <!-- 인기 쇼핑 카테고리 써져있는 박스 -->
+            <div class="item1"> 인기 쇼핑 카테고리 </div>
 
-                <div class="item4">
-                    <a href="https://www.amazon.com/s?i=specialty-aps&bbn=16225018011&rh=n%3A7141123011%2Cn%3A16225018011%2Cn%3A1040660&language=ko&pf_rd_i=16225018011&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=f12e6d01-4ae9-4064-9165-000cac2ebf6d&pf_rd_p=f12e6d01-4ae9-4064-9165-000cac2ebf6d&pf_rd_r=VD0AB1WA8Y66BKFZ3XDE&pf_rd_r=VD0AB1WA8Y66BKFZ3XDE&pf_rd_s=merchandised-search-left-2&pf_rd_t=101&ref=amb_link_1">
-                        3 의류
-                    </a>
-                    <img class="image" src="./images/인기상품/의류.jpeg" alt="의류">
-                </div>  
-                
-                <div class="item5">
-                    <a href="https://www.amazon.com/s?k=%EC%B1%85%EC%83%81&rh=n%3A1055398&dc&language=ko&qid=1619260609&rnid=2941120011&ref=sr_nr_n_4">
-                    4 가구
-                    </a>                    
-                    <img class="image" src="./images/인기상품/가구.jpeg" alt="가구">
-              </div>
-
+            <!-- 인기 쇼핑 카테고리: 전자제품 -->
+            <div class="item2">
+                <a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics-intl-ship&field-keywords=">
+                    1 전자제품
+                </a>
+                <img class="image" src="./images/인기상품/전자제품.jpeg" alt="전자제품">                
             </div>
-            </main>
-            <aside id="right"></aside>
-        </div>
+
+            <!-- 인기 쇼핑 카테고리: 미용제품 -->
+            <div class="item3">                
+                <a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dbeauty-intl-ship&field-keywords=">
+                    2 미용제품
+                </a>
+                <img class="image" src="./images/인기상품/미용제품.jpeg" alt="미용제품">
+            </div>
+
+            <!-- 인기 쇼핑 카테고리: 의류 -->
+            <div class="item4">
+                <a href="https://www.amazon.com/s?i=specialty-aps&bbn=16225018011&rh=n%3A7141123011%2Cn%3A16225018011%2Cn%3A1040660&language=ko&pf_rd_i=16225018011&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=f12e6d01-4ae9-4064-9165-000cac2ebf6d&pf_rd_p=f12e6d01-4ae9-4064-9165-000cac2ebf6d&pf_rd_r=VD0AB1WA8Y66BKFZ3XDE&pf_rd_r=VD0AB1WA8Y66BKFZ3XDE&pf_rd_s=merchandised-search-left-2&pf_rd_t=101&ref=amb_link_1">
+                    3 의류
+                </a>
+                <img class="image" src="./images/인기상품/의류.jpeg" alt="의류">
+            </div>  
+                
+            <!-- 인기 쇼핑 카테고리: 가구 -->
+            <div class="item5">
+                <a href="https://www.amazon.com/s?k=%EC%B1%85%EC%83%81&rh=n%3A1055398&dc&language=ko&qid=1619260609&rnid=2941120011&ref=sr_nr_n_4">
+                4 가구
+                </a>                    
+                <img class="image" src="./images/인기상품/가구.jpeg" alt="가구">
+            </div>
+
+    </div>
+    </main>
+        <aside id="right"></aside>
+    
 
         
         <!-- FOOTER -->
         <footer id="footer">
+            <!-- FOOTER1 -->
             <div id="footer1">
                 <li>
                     Amazon에 대해 알아보기
@@ -313,7 +330,9 @@
                 </li>
 
             </div>
+            <!-- FOOTER2 -->
             <div id="footer2">
+                <!--기존 아마존 사이트와 연결 -->
                 <a href="https://www.amazon.com/-/ko/gp/help/customer/display.html?nodeId=508088&ref_=footer_cou">
                     이용약관
                 </a>

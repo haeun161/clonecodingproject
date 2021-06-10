@@ -12,7 +12,7 @@
 /* COMMON */
 
 body{
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Do Hyeon', sans-serif; /* 구글 폰트 */
     font-size: 15px;
     font-weight: 400;
     line-height: 1.4;
@@ -116,7 +116,7 @@ header{
     width: 1000px;
     height: 60px;
     align-items: center; 
-    display: flex
+    display: flex;
     position: fixed;
 }
 .delivery .material-icons{
