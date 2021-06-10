@@ -18,10 +18,11 @@ body{
     line-height: 1.4;
     background: #F6F5F0;
     margin: 0 auto;
+    /*새로운 라인에 요소를 시작하게 하며, 전체 너비를 다 차지하게 설정 */
+    display: block;  /* 클론코딩하는 사이트와 일치 */
 }
 /* 모든 material-icons */
 .material-icons{
-        color: #F6F5F0;
         font-size: 20px;
         font-weight: 700;
         padding-top: 7px;
@@ -36,7 +37,9 @@ header{
     width: 100%;
 }
 #main-bar{
+    background-color: black ;     
     align-items: center;
+    position: relative;
 }
 
     /* Bar1 */
@@ -45,9 +48,8 @@ header{
     height: 60px;
     font-size: 14px;
     width: 100%;
-    height: 60px;
     align-items: center; /* 모든 아이템 정중앙에 배치 */
-    position: fixed;
+    position: relative;
 }
 
 /* Bar1-left */
@@ -58,56 +60,61 @@ header{
     height: 60px;
     font-size: 14px;
     width: 200px;
-    height: 60px;
+    position: relative;
 
 }
 
 /* Bar1-middle */
+/* SEARCH : 검색 박스 아이콘 담는 큰 박스 */
 #bar1-middle{
+    /* 외형 꾸미기 */
     background-color: lavenderblush;
     border: 0.2rem outset blue;
     outline: 0.2rem solid khaki;
     border-radius: 12px;
     margin: 0.5rem;
     padding: 1rem;
+    /* 위치 */
     top: 0px;
     left: 150px;
     padding-left: 500px;
-    display: relative;
     align-items: center; 
-    position: fixed;
+    position: absolute;
+    z-index: 0;
 }
 
 /* SEARCH */
+/* SEARCH : 검색 박스 아이콘 */
 .search{
-    color: #000000;
     font-size: 20px;
     font-weight: 700;
-    top: 11.2px;
-    left: 168px;
+    top: 0px;
+    left: 10px;
     white-space: nowrap;
     cursor: pointer;
     align-items: center; 
-    position: fixed;
+    position: absolute;
+    z-index: 1;
 }
-/* SEARCH : 검색 박스 아이콘 */
+/* SEARCH : 검색 박스 아이콘: "검색어를 입력하시오" 부분 */
 .search > .search__box{
     height: 25px;
     width: 410px;
+    z-index: 1;
 
 }
 /* SEARCH : 검색아이콘 */
 .search > .material-icons{
     background-color: #F6F5F0;
-    color: #000000;
-    top: 12px;
-    left: 590px;
-    height: 20px;
-    font-size: 20px;
+    top: 1px;
+    left: 450px;
+    height: 18px;
+    font-size: 15px;
+    font-display: center;
     cursor: pointer;
-    border: 0.1rem outset rgb(0, 0, 0);
+    border: 0.05rem outset rgb(0, 0, 0);
     align-items: center; 
-    position: fixed;
+    position: absolute;
 
 }
 
@@ -117,12 +124,12 @@ header{
     height: 60px;
     font-size: 14px;
     top: 0px;
-    right: 0px;
+    left:0px;
     width: 1000px;
     height: 60px;
     align-items: center; 
     display: flex;
-    position: fixed;
+    position: absolute;
 }
 /* 배송지 */
 .delivery{
@@ -133,7 +140,7 @@ header{
     top: 18px;
     margin-left: 800px;
     display: fixed;
-    position: fixed;
+    position: absolute;
 }
 
 /* delivery 배송지 입력 아이콘 */
@@ -142,7 +149,7 @@ header{
     left: 815px;
     top: 15px;
     display: fixed;
-    position: fixed;
+    position: absolute;
 
 }
 
@@ -155,7 +162,7 @@ header{
     top: 18px;
     margin-left: 800px;
     display: fixed;
-    position: fixed;
+    position:absolute;
 }
 
 /* 회원가입 */
@@ -167,7 +174,7 @@ header{
     top: 18px;
     margin-left: 800px;
     display: fixed;
-    position: fixed;
+    position: absolute;
 }
 
     /* Bar2 */
@@ -177,9 +184,9 @@ header{
     height: 40px;
     width: 100%;
     font-size: 20px;
-    top: 60px;
+    top: 0px;
     align-items: center;
-    position: fixed;
+    position: relative;
 }
 
 /* Bar2-left: 햄버거 바 */
@@ -191,7 +198,6 @@ header{
     font-size: 20px;
     align-items: center;
     position: fixed;
-    z-index: index 5;
 }
 /* 햄버거바 여는 아이콘 */
 .bar2-left>.material-icons#btn--open {
@@ -224,8 +230,8 @@ nav {
     color: #F6F5F0;
     font-size: 20px;
     font-weight: 700;
-    padding-top: 0px;
-    padding-left: 500px;
+    padding-top: 7px;
+    padding-left: 10px;
     cursor: pointer;
     position: fixed;
     }   
@@ -236,7 +242,7 @@ nav {
     margin-left: 200px;
     width: 700px;
     position: fixed;
-    display: fixed;
+    position: relative;
 }
 
 
@@ -244,6 +250,7 @@ nav {
 #bar2-right{
     color: #F6F5F0;
     width: 300px;
+    top:0px;
     margin-top: 5px;
     margin-left: 800px;
     display: fixed;
@@ -251,11 +258,15 @@ nav {
 
 
     /* MAIN SECTION */
+main{
+    width: 100%;
+}
 /* inner */
     .inner {
         width: 500px;
         margin: 0 auto;
         height: 100vh;
+        left: 0px;
         /* inner안의 모든 요소를 가운데 정렬 */
         display: flex;
         justify-content: center;
@@ -334,11 +345,11 @@ nav {
         position: absolute;
         /* #slider의 상단으로부터 #slider의 전체 높이의 50%에 해당하는 지점만큼 간격을 줍니다  */
         top: 50%;
-        /* 크기를 80px만큼 주고 */
+        /* 글자 크기를 80px만큼 주고 */
         font-size: 80px;
         /* margin-top 속성을 이용하여 그것의 절반만큼 위로 당겨줍니다 */
         margin-top: -40px;
-        color: #F6F5F0;
+        color: #000000;
         cursor: pointer;
         /* 슬라이드 이미지보다 위에 있도록 z-index값을 설정  */
         z-index: 2;
@@ -381,7 +392,8 @@ nav {
         width: 8px;
         height: 8px;
         border-radius: 5px;
-        background: #F6F5F0;
+        color: #000000;
+        background:#F6F5F0;
         margin: 0 3px;
         cursor: pointer;
         transition: .4s ease;
@@ -500,8 +512,8 @@ nav {
     bottom: 0px;
     padding: 10px 0 30px;
     align-content: center;
-    position: fixed;
-    display: fixed;}
+    position:fixed;
+    display:fixed;}
 }
 
 /* 태블릿PC */
