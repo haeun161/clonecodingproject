@@ -126,11 +126,11 @@ header{
     height: 60px;
     font-size: 14px;
     top: 0px;
-    left:0px;
+    left:500px;
     right: 0px;
     height: 60px;
     align-items: center; 
-    display: flex;
+    display: fixed;
     position: absolute; /*absolute는 부모인 bar1을 기준으로 움직인다. */
 }
 /* 배송지 */
@@ -139,10 +139,9 @@ header{
     font-size: 20px;
     right: 500px;
     top: 12px;
-    margin-left: 800px;
     justify-content: center;
     align-items: center;
-    display: flex;
+    display: fixed;
     position: absolute; /*absolute는 부모인 bar1을 기준으로 움직인다. */
     
 }
@@ -150,7 +149,7 @@ header{
 /* delivery 배송지 입력 아이콘 */
 .delivery .material-icons{
     color: #F6F5F0;
-    display: flex;
+    display: fixed;
     position: absolute; /*absolute는 부모인 delivery 기준으로 움직인다. */
 
 }
@@ -194,13 +193,13 @@ header{
 
 /* Bar2-left: 햄버거 바 */
 .bar2-left{
-    color: #F6F5F0;
-    height: 40px;
-    left: 0px;
     width: 200px;
+    height: 60px;
     font-size: 20px;
-    align-items: center;
-    position: fixed;
+    top: 0px;
+    left:0px;
+    align-items: center; 
+    display: flex;
 }
 /* 햄버거바 여는 아이콘 */
 .bar2-left>.material-icons#btn--open {
@@ -245,16 +244,13 @@ nav {
     }   
 
 /* Bar2-middle: 오늘의 딜,고객서비스, 기프트 카드, 판매, 레지스트리 */
-
-
 #bar2-middle{
     margin-top: 2px;
     margin-left: 200px;
     width: 700px;
-    cursor: pointer;
     position: fixed;
+    z-index: 33;
 }
-
 
 /* Bar2-right: 'click here to change language' */
 #bar2-right{
@@ -265,7 +261,6 @@ nav {
     margin-left: 800px;
     display: fixed;
 }
-
 
     /* MAIN SECTION */
 main{
