@@ -131,7 +131,7 @@ header{
     height: 60px;
     align-items: center; 
     display: fixed;
-    position: absolute; /*absolute는 부모인 bar1을 기준으로 움직인다. */
+    position: absolute; /*absolute는 부모를 기준으로 움직인다. */
 }
 /* 배송지 */
 .delivery{
@@ -192,21 +192,21 @@ header{
 }
 
 /* Bar2-left: 햄버거 바 */
-.bar2-left{
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
+#bar2-left{
     top: 0px;
     left:0px;
+    width: 200px;
+    height: 60px;
     align-items: center; 
-    display: flex;
+    display: fixed;
+    position: absolute; /*absolute는 부모를 기준으로 움직인다. */
 }
 /* 햄버거바 여는 아이콘 */
-.bar2-left>.material-icons#btn--open {
+.material-icons#btn--open {
     display: block;
 }
 /* 햄버거바 닫는 아이콘 */
-.bar2-left>.material-icons#btn--close {
+.material-icons#btn--close {
     display: none;}
 
     /* nav */
