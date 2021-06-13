@@ -35,11 +35,12 @@ body{
     /* HEADER */
 header{
     width: 100%;
+    height: 100px;
 }
 #main-bar{
     background-color: black ;     
     align-items: center;
-    position: relative;
+
 }
 
     /* Bar1 */
@@ -50,6 +51,7 @@ header{
     width: 100%;
     align-items: center; /* 모든 아이템 정중앙에 배치 */
     position: relative;
+    display: flex;
 }
 
 /* Bar1-left */
@@ -60,7 +62,8 @@ header{
     height: 60px;
     font-size: 14px;
     width: 200px;
-    position: relative;
+    /*absolute는 부모인 bar1을 기준으로 움직인다. */
+    position: absolute;
 
 }
 
@@ -76,10 +79,10 @@ header{
     padding: 1rem;
     /* 위치 */
     top: 0px;
-    left: 150px;
+    left: 200px;
     padding-left: 500px;
     align-items: center; 
-    position: absolute;
+    position: absolute;  /*absolute는 부모인 bar1을 기준으로 움직인다. */
     z-index: 0;
 }
 
@@ -93,14 +96,13 @@ header{
     white-space: nowrap;
     cursor: pointer;
     align-items: center; 
-    position: absolute;
-    z-index: 1;
+    position: absolute; /*absolute는 부모인 bar1을 기준으로 움직인다. */
 }
+
 /* SEARCH : 검색 박스 아이콘: "검색어를 입력하시오" 부분 */
 .search > .search__box{
     height: 25px;
     width: 410px;
-    z-index: 1;
 
 }
 /* SEARCH : 검색아이콘 */
@@ -115,7 +117,7 @@ header{
     border: 0.05rem outset rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: absolute; /*absolute는 부모인 bar1을 기준으로 움직인다. */
     display: flex;}
 
 }
@@ -131,7 +133,7 @@ header{
     height: 60px;
     align-items: center; 
     display: flex;
-    position: absolute;
+    position: absolute; /*absolute는 부모인 bar1을 기준으로 움직인다. */
 }
 /* 배송지 */
 .delivery{
@@ -141,8 +143,10 @@ header{
     left: 50px;
     top: 18px;
     margin-left: 800px;
-    display: fixed;
-    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute; /*absolute는 부모인 bar1을 기준으로 움직인다. */
 }
 
 /* delivery 배송지 입력 아이콘 */
@@ -150,8 +154,10 @@ header{
     color: #F6F5F0;
     left: 815px;
     top: 15px;
-    display: fixed;
-    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute; /*absolute는 부모인 bar1을 기준으로 움직인다. */
 
 }
 
@@ -163,6 +169,8 @@ header{
     left: 300px;
     top: 18px;
     margin-left: 800px;
+    justify-content: center;
+    align-items: center;
     display: fixed;
     position:absolute;
 }
@@ -175,6 +183,8 @@ header{
     left: 400px;
     top: 18px;
     margin-left: 800px;
+    justify-content: center;
+    align-items: center;
     display: fixed;
     position: absolute;
 }
@@ -246,8 +256,8 @@ nav {
     margin-top: 2px;
     margin-left: 200px;
     width: 700px;
+    cursor: pointer;
     position: fixed;
-    position: relative;
 }
 
 
@@ -271,7 +281,7 @@ main{
         width: 500px;
         margin: 0 auto;
         height: 100vh;
-        left: 0px;
+        left: 50px;
         /* inner안의 모든 요소를 가운데 정렬 */
         display: flex;
         justify-content: center;
@@ -328,9 +338,9 @@ main{
     /* 슬라이드 콘텐츠 */
     
     #inner #slider .slide__content {
-        /* 슬라이드 콘텐츠 영역은 #slider와 동일하게 잡아줍니다 */
-        width: 100%;
-        height: 60vh;
+        /* 슬라이드 콘텐츠 영역은 #slider와 동일하게 */
+        width: 30%;
+        height: 50vh;
         /* #slider 한가운데 콘텐츠가 위치하도록 가운데 정렬 */
         display: flex;
 
@@ -456,8 +466,7 @@ main{
     width: 250px;
     height: 200px;
     float: left;
-    /* 가장자리를 둥글게 */
-    border-radius: 20px; 
+    border-radius: 20px;    /* 가장자리를 둥글게 */
     position: fixed;
     /* item5 안의 모든 요소를 가운데 정렬 */
     display: flex;
@@ -474,8 +483,7 @@ main{
     width: 250px;
     height: 200px;
     float: left;
-    /* 가장자리를 둥글게 */
-    border-radius: 20px; 
+    border-radius: 20px;     /* 가장자리를 둥글게 */
     position: fixed;
     /* item3 안의 모든 요소를 가운데 정렬 */
     display: flex;
@@ -492,8 +500,7 @@ main{
     width: 250px;
     height: 200px;
     float: left;
-    /* 가장자리를 둥글게 */
-    border-radius: 20px; 
+    border-radius: 20px;     /* 가장자리를 둥글게 */
     position: fixed;
     /* item4 안의 모든 요소를 가운데 정렬 */
     display: flex;
@@ -510,8 +517,7 @@ main{
     width: 250px;
     height: 200px;
     float: left;
-    /* 가장자리를 둥글게 */
-    border-radius: 20px; 
+    border-radius: 20px;   /* 가장자리를 둥글게 */
     position: fixed;
     /* item5 안의 모든 요소를 가운데 정렬 */
     display: flex;
