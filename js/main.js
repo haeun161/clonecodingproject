@@ -32,7 +32,7 @@ menuCloseEl.addEventListener("click", function() {
     sideMenuEl.style.transform = 'translateX(-100%)'
 })
 
-//슬라이드 시가낯에 따라 자동 넘어가기
+//슬라이드 시간 차에 따라 자동 넘어가기
 
 
 // 슬라이드 이미지들 선택자
