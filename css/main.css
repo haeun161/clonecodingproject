@@ -113,8 +113,10 @@ header{
     font-display: center;
     cursor: pointer;
     border: 0.05rem outset rgb(0, 0, 0);
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    display: flex;}
 
 }
 
@@ -187,6 +189,7 @@ header{
     top: 0px;
     align-items: center;
     position: relative;
+
 }
 
 /* Bar2-left: 햄버거 바 */
@@ -237,6 +240,8 @@ nav {
     }   
 
 /* Bar2-middle: 오늘의 딜,고객서비스, 기프트 카드, 판매, 레지스트리 */
+
+
 #bar2-middle{
     margin-top: 2px;
     margin-left: 200px;
@@ -275,8 +280,8 @@ main{
     
     /* MAIN SLIDER: 슬라이더 */
     
-    .inner #slider {
-        width: 100%;
+    #inner #slider {
+        width: 30%;
         height: 50vh;
         /* 범위를 넘어서는 부분은 보이지 않도록 설정 */
         overflow: hidden;
@@ -285,7 +290,7 @@ main{
         position: relative;
     }
     
-    .inner #slider .slide {
+    #inner #slider .slide {
         /* 슬라이드 이미지는 원본 크기와 관계없이  */
         /* 가운데를 기준으로 반복없이 주어진 영역을 꽉 채우도록 설정 */
         background-size: cover;
@@ -298,23 +303,23 @@ main{
     
     /* 다섯 장의 슬라이드 이미지를 div 태그의 배경 이미지로 지정 */
     
-    .inner #slider .slide1 {
+    #inner #slider .slide1 {
         background-image: url(../images/slider/slide1.jfif);
     }
     
-    .inner #slider .slide2 {
+    #inner #slider .slide2 {
         background-image: url(../images/slider/slide2.jfif);
     }
     
-    .inner #slider .slide3 {
+    #inner #slider .slide3 {
         background-image: url(../images/slider/slide3.jfif);
     }
     
-    .inner #slider .slide4 {
+    #inner #slider .slide4 {
         background-image: url(../images/slider/slide4.jfif);
     }
     
-    .inner #slider .slide5 {
+    #inner #slider .slide5 {
         background-image: url(../images/slider/slide5.jfif);
     }
     
@@ -322,7 +327,7 @@ main{
     /* SLIDER CONTENT */
     /* 슬라이드 콘텐츠 */
     
-    .inner #slider .slide__content {
+    #inner #slider .slide__content {
         /* 슬라이드 콘텐츠 영역은 #slider와 동일하게 잡아줍니다 */
         width: 100%;
         height: 60vh;
@@ -331,7 +336,7 @@ main{
 
     }
     
-    .inner #slider .slide__content span {
+    #inner #slider .slide__content span {
         font-size: 80px;
         color: #F6F5F0;
     }
@@ -339,8 +344,8 @@ main{
     /* SLIDER ARROW */
     
     /* 슬라이드 왼쪽, 오른쪽 화살표에 공통으로 들어갈 속성 지정 */
-    
-    .inner #slider .arrow--left, .inner #slider .arrow--right {
+
+    #inner #slider .arrow--left, #inner #slider .arrow--right {
         /* 부모 요소인 #slider를 기준으로 절대위치를 지정 */
         position: absolute;
         /* #slider의 상단으로부터 #slider의 전체 높이의 50%에 해당하는 지점만큼 간격을 줍니다  */
@@ -357,19 +362,19 @@ main{
     
     /* 왼쪽 화살표는 #slider의 왼편에 붙도록 합니다 */
     
-    .inner #slider .arrow--left {
+    #inner #slider .arrow--left {
         left: 0px;
     }
     
     /* 오른쪽 화살표는 #slider의 오른편에 붙도록 합니다 */
     
-    .inner #slider .arrow--right {
+    #inner #slider .arrow--right {
         right: 0px;
     }
     
     /* SLIDER DOTS */
     
-    .inner #slider .dots {
+    #inner #slider .dots {
         /* 부모 요소인 #slider를 기준으로 절대 위치 지정 */
         position: absolute;
         /* #slider 맨 아래 정가운데 오도록 */
@@ -388,7 +393,7 @@ main{
     
     /* 슬라이드 점들 */
     
-    .inner #slider .dots .dot {
+    #inner #slider .dots .dot {
         width: 8px;
         height: 8px;
         border-radius: 5px;
@@ -402,7 +407,7 @@ main{
     /* 슬라이드를 시작할 때 첫번째 슬라이드 이미지가 보일 것이므로
     첫번째 점 또한 다르게 보이도록 설정  */
     
-    .inner #slider .dots .dot1 {
+    #inner #slider .dots .dot1 {
         background: #1107ff;
         width: 30px
     }
@@ -410,82 +415,109 @@ main{
 
 /* 인기 쇼핑 카테고리 */
 .grid-container {
-  width: 1000px;
-  height: 800px;
+  width: 100%;
+  height: 100%;
   float: right;
-  background: rgb(255, 255, 255);
 }
 
 /* 인기 쇼핑 카테고리 써져있는 박스 */
 .item1{
+    /* 배경 색 */
     background-color: lightslategray;
+    /* 위치 배치 */
     top: 120px;
     left: 550px;
     width: 150px;
     height: 50px;
-    justify-content: center;
-    align-content: center;
-    border-radius: 20px; /* 가장자리를 둥글게 */
     position: fixed;
-    display: fixed;
-}
+    border-radius: 20px; /* 가장자리를 둥글게 */
+    /* item1 안의 모든 요소를 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;}
 
 /* 인기 쇼핑 카테고리: 모든 이미지 */
 .image{
     width: 250px;
     height: 180px;
     border-radius: 20px; /* 가장자리를 둥글게 */
-    
-}
+    /* image 안의 모든 요소를 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;}
 
 /* 인기 쇼핑 카테고리: 전자제품 */
 .item2{
+    /* 배경 색 */
     background-color: lightblue;
+    /* 위치 배치 */
     top: 120px;
     left: 800px;
     width: 250px;
     height: 200px;
-    border-radius: 20px; /* 가장자리를 둥글게 */
+    float: left;
+    /* 가장자리를 둥글게 */
+    border-radius: 20px; 
     position: fixed;
-    display: fixed;
-}
+    /* item5 안의 모든 요소를 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;}
 
 /* 인기 쇼핑 카테고리: 미용제품 */
 .item3{
+    /* 배경 색 */
     background-color: lightblue;
+    /* 위치 배치 */
     top: 120px;
     left: 1200px;
     width: 250px;
     height: 200px;
-    border-radius: 20px; /* 가장자리를 둥글게 */
     float: left;
+    /* 가장자리를 둥글게 */
+    border-radius: 20px; 
     position: fixed;
-    display: fixed;
-}
+    /* item3 안의 모든 요소를 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
 /* 인기 쇼핑 카테고리: 의류 */
 .item4{
+    /* 배경 색 */
     background-color: lightblue;
+    /* 위치 배치 */
     top: 350px;
     left: 800px;
     width: 250px;
     height: 200px;
-    border-radius: 20px; /* 가장자리를 둥글게 */
     float: left;
+    /* 가장자리를 둥글게 */
+    border-radius: 20px; 
     position: fixed;
-    display: fixed;
-}
+    /* item4 안의 모든 요소를 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
 /* 인기 쇼핑 카테고리: 가구 */
 .item5{
+    /* 배경 색 */
     background-color: lightblue;
+    /* 위치 배치 */
     top: 350px;
     left: 1200px;
     width: 250px;
     height: 200px;
-    border-radius: 20px; /* 가장자리를 둥글게 */
     float: left;
+    /* 가장자리를 둥글게 */
+    border-radius: 20px; 
     position: fixed;
-    display: fixed;
-}
+    /* item5 안의 모든 요소를 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
 
     /* FOOTER */
 /* FOOTER1 */
@@ -511,10 +543,12 @@ main{
     height: 20px;
     bottom: 0px;
     padding: 10px 0 30px;
-    align-content: center;
     position:fixed;
-    display:fixed;}
-}
+    /* footer2 안의 모든 요소를 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
 
 /* 태블릿PC */
 /* 스크린 너비가 1400px이하면 스타일 속성 적용됨 */
