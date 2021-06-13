@@ -272,23 +272,21 @@ nav {
     /* MAIN SECTION */
 main{
     width: 100%;
+    top: 100px;
+    height: 480px;
 }
 /* inner */
-    .inner {
-        width: 500px;
-        margin: 0 auto;
+    #inner {
+        width: 50%;
+        left: 0px;
         height: 100vh;
-        left: 50px;
-        /* inner안의 모든 요소를 가운데 정렬 */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
     }
     
     /* MAIN SLIDER: 슬라이더 */
     
     #inner #slider {
-        width: 30%;
+        width: 50%;
         left: 30px;
         top: 40px;
         height: 50vh;
