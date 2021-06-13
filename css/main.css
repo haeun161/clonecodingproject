@@ -273,20 +273,19 @@ nav {
 main{
     width: 100%;
     top: 100px;
-    height: 480px;
+    height: 490px;
 }
 /* inner */
     #inner {
         width: 50%;
         left: 0px;
-        height: 100vh;
-
+        height: 490px;
     }
     
     /* MAIN SLIDER: 슬라이더 */
     
     #inner #slider {
-        width: 50%;
+        width: 70%;
         left: 30px;
         top: 40px;
         height: 50vh;
