@@ -105,6 +105,7 @@ header{
 .search > .search__box{
     height: 25px;
     width: 410px;
+    cursor: pointer;
 
 }
 /* SEARCH : 검색아이콘 */
