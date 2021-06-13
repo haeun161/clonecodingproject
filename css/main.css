@@ -19,7 +19,6 @@ body{
     background: #F6F5F0;
     margin: 0 auto;
     /*새로운 라인에 요소를 시작하게 하며, 전체 너비를 다 차지하게 설정 */
-    display: block;  /* 클론코딩하는 사이트와 일치 */
 }
 /* 모든 material-icons */
 .material-icons{
@@ -53,6 +52,9 @@ header{
     position: relative;
     display: flex;
 }
+.logo{
+    z-index: 5;
+}
 
 /* Bar1-left */
 
@@ -82,8 +84,7 @@ header{
     left: 200px;
     padding-left: 500px;
     align-items: center; 
-    position: absolute;  /*absolute는 부모인 bar1을 기준으로 움직인다. */
-    z-index: 0;
+    position: fixed;
 }
 
 /* SEARCH */
@@ -108,19 +109,15 @@ header{
 }
 /* SEARCH : 검색아이콘 */
 .search > .material-icons{
-    background-color: #F6F5F0;
     top: 1px;
     left: 450px;
     height: 18px;
-    font-size: 15px;
-    font-display: center;
     cursor: pointer;
     border: 0.05rem outset rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
     position: absolute; /*absolute는 부모인 bar1을 기준으로 움직인다. */
     display: flex;}
-
 }
 
 /* Bar1-right */
@@ -455,7 +452,11 @@ main{
     height: 50px;
     position: fixed;
     border-radius: 20px; /* 가장자리를 둥글게 */
-}
+    /* item5 안의 모든 요소를 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
 
 
 /* 인기 쇼핑 카테고리: 모든 이미지 */
